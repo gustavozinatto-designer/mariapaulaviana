@@ -89,7 +89,7 @@ export default function App() {
   return (
     <main className="relative">
       {/* ─── NAVEGAÇÃO SUPERIOR ─── */}
-      <nav className={`fixed top-0 left-0 w-full h-20 px-[5vw] z-[100] flex items-center justify-between transition-all duration-500 ${scrolled ? 'bg-[#11141A]/90 backdrop-blur-md border-b border-white/5' : 'bg-transparent'}`}>
+      <nav className={`fixed top-0 left-0 w-full h-20 px-[5vw] z-[100] flex items-center justify-between transition-all duration-500 ${scrolled ? 'bg-[#11141A]/90 backdrop-blur-md' : 'bg-transparent'}`}>
         <div className="flex items-center gap-2">
           <div className="font-serif text-xl tracking-tighter uppercase text-white leading-none">
             MARIA PAULA <span className="text-[var(--terra)] font-light italic">VIANA</span>
