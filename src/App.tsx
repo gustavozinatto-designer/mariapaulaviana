@@ -9,12 +9,11 @@
  */
 
 import { useState, useEffect, useRef } from 'react';
-import { Heart, Search, Type, ShieldCheck, Users, Globe, Menu, X, Instagram } from 'lucide-react';
+import { Heart, Search, Type, ShieldCheck, Users, Globe, Instagram } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('s1');
   const [scrolled, setScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const servicesRef = useRef<HTMLDivElement>(null);
 
@@ -107,47 +106,6 @@ export default function App() {
           <a href="#depoimentos" className="hover:text-[var(--terra)] transition-colors no-underline text-white">Depoimentos</a>
           <a href="#faq" className="hover:text-[var(--terra)] transition-colors no-underline text-white">Dúvidas</a>
           <a href="#contato" className="hover:text-[var(--terra)] transition-colors no-underline text-white">Contato</a>
-        </div>
-
-        {/* Mobile Toggle */}
-        <button 
-          className="lg:hidden text-white p-2" 
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Menu"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-
-        {/* Mobile Menu Overlay */}
-        <div className={`fixed inset-0 mobile-menu-overlay flex flex-col items-center justify-center gap-8 transition-all duration-500 lg:hidden ${isMenuOpen ? 'opacity-100 pointer-events-auto translate-y-0' : 'opacity-0 pointer-events-none -translate-y-4'}`}>
-          <button className="absolute top-6 right-8 text-white hover:text-[var(--terra)] transition-colors" onClick={() => setIsMenuOpen(false)}>
-            <X size={32} />
-          </button>
-          
-          <div className="font-serif text-2xl tracking-tighter uppercase text-white leading-none mb-4">
-            MARIA PAULA <span className="text-[var(--terra)] font-light italic">VIANA</span>
-          </div>
-
-          {[
-            { label: 'Início', href: '#inicio' },
-            { label: 'Sobre', href: '#sobre' },
-            { label: 'Serviços', href: '#servicos' },
-            { label: 'Processo', href: '#processo' },
-            { label: 'Depoimentos', href: '#depoimentos' },
-            { label: 'Dúvidas', href: '#faq' },
-            { label: 'Contato', href: '#contato' }
-          ].map((link) => (
-            <a 
-              key={link.href} 
-              href={link.href} 
-              className="mobile-menu-link"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
-          
-          <a href={waLink} className="btn-fill mt-4" target="_blank" rel="noopener noreferrer">Falar Comigo</a>
         </div>
       </nav>
 

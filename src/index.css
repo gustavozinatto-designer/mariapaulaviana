@@ -191,7 +191,7 @@ body {
     max-width: 100%;
   }
   .hero-overlay {
-    background: linear-gradient(to top, rgba(17, 20, 26, 0.95) 0%, rgba(17, 20, 26, 0.75) 50%, rgba(17, 20, 26, 0.9) 100%);
+    background: transparent;
   }
   .hero-headline-left {
     font-size: 2.2rem;
@@ -737,14 +737,8 @@ body {
   background: transparent;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  transition: var(--transition-smooth);
   border-radius: 0;
   align-items: start;
-}
-
-.dor-card:hover { 
-  border-bottom-color: rgba(0,0,0,0.12);
-  transform: translateY(-2px);
 }
 
 .dor-title { 
@@ -754,10 +748,7 @@ body {
   color: #1A1A1A; 
   font-weight: 400; 
   margin-bottom: 0;
-  transition: color 0.3s ease;
 }
-
-.dor-card:hover .dor-title { color: var(--terra); }
 
 .dor-text { 
   font-size: 1.05rem; 
@@ -1053,17 +1044,17 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-40%); /* Starts slightly lower within the center-aligned container */
+  transform: translate(30px, -50%); /* Starts offset to the right */
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1.5s var(--ease-premium), visibility 1.5s var(--ease-premium), transform 1.5s var(--ease-premium);
+  transition: opacity 1s var(--ease-premium), visibility 1s var(--ease-premium), transform 1s var(--ease-premium);
 }
 
 .depo-slide.active {
   opacity: 1;
   visibility: visible;
-  transform: translateY(-50%); /* Moves to its final centered position */
+  transform: translate(0, -50%); /* Moves to its centered position */
 }
 
 .depo-quote-icon {
