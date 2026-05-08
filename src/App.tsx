@@ -154,7 +154,7 @@ export default function App() {
           </div>
           <div className="sobre-image-col reveal-on-scroll stagger-2">
             <div className="sobre-photo-placeholder">
-              <img src="https://lh3.googleusercontent.com/d/1L-u8kPCEExhyqQzlw4fFwAFFYXLL5lXc" alt="Dra. Maria Paula Viana" className="sobre-photo-img" />
+              <img src="https://lh3.googleusercontent.com/d/10bBCcnzM_4S6Lw4JuisFxFJi06z6Mqtd" alt="Dra. Maria Paula Viana" className="sobre-photo-img" />
             </div>
           </div>
         </div>

@@ -455,8 +455,9 @@ body {
 }
 
 .sobre-photo-placeholder { 
-  width: 70%; 
-  height: 70%; 
+  width: 85%; 
+  max-width: 480px;
+  aspect-ratio: 4 / 5;
   margin: 0 auto;
   background: var(--sand); 
   display: flex; 
@@ -480,10 +481,8 @@ body {
 }
 
 .sobre-photo-img { 
-  width: 900px; 
-  height: 900px;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%; 
+  height: 100%;
   object-fit: cover; 
   display: block; 
   transition: var(--transition-slower);
