@@ -66,7 +66,7 @@ export default function App() {
     { id: 's6', title: 'Demandas Cíveis', tag: 'Cível · Contencioso', desc: 'Para situações que exigem atuação judicial, com encaminhamento para parceiros especializados quando necessário, sempre com transparência e acompanhamento.', bullets: ['Análise do caso e estratégia', 'Atuação direta ou via parceiros', 'Comunicação clara em todo o processo'], cta: 'Consultar sobre meu caso', msg: 'Olá, gostaria de consultar sobre uma demanda na área cível.' },
   ];
 
-  const waNumber = '5517992505324';
+  const waNumber = '5517991586316';
   const genericMsg = encodeURIComponent('Olá, vi seu site e gostaria de conversar sobre serviços jurídicos.');
   const waLink = `https://wa.me/${waNumber}?text=${genericMsg}`;
 
